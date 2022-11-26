@@ -1,0 +1,33 @@
+<%-include("partials/header.ejs")%>
+<%-include("partials/navbar.ejs")%>
+   <div class="container">
+    <div class="row">
+        <div class="col-sm-6 m-auto">
+            <h1>SignUp</h1>
+            <form method="post">
+                <div class="mb-3">
+                    <label>Name:</label>
+                    <input type="text" class="form-control" name="name" autocomplete="off" autofocus/>
+                </div>
+                <div class="mb-3">
+                    <label>Email:</label>
+                    <input type="text" class="form-control" name="email" autocomplete="off" autofocus/>
+                </div>
+                <div class="mb-3">
+                    <label>Password:</label>
+                    <input type="password" class="form-control" name="password" autocomplete="off" autofocus/>
+                </div>
+                <div class="mb-3">
+                    <label>Confirm Password:</label>
+                    <input type="password" class="form-control" name="cpassword" autocomplete="off" autofocus/>
+                </div>
+                <button type="submit" class="btn btn-success">signup</button>
+                <button type="submit" class="btn btn-danger ">
+                    <a href="/auth/google" class="text-decoration-none text-white">Google</a>
+                </button>
+            </form>
+            
+        </div>
+    </div>
+   </div>
+<%-include("partials/footer.ejs")%>
